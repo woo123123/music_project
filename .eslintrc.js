@@ -1,0 +1,22 @@
+module.exports = {
+  root: true,
+  env: {
+    browser: true,
+    node: true,
+    jquery: true
+  },
+  extends: [
+    'plugin:vue/essential',
+    '@vue/standard'
+  ],
+  parserOptions: {
+    parser: 'babel-eslint'
+  },
+  plugins: [
+    'vue'
+  ],
+  rules: {
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
+  }
+}
